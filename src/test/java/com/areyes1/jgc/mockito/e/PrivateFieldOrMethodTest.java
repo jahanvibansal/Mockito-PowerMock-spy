@@ -48,7 +48,7 @@ private XxxService target;
 	@Test
 	public void verifyPrivateMethodInvoke() throws Exception {
 		//prepare
-		
+		target = PowerMockito.spy(target);
 		//action
 		target.foreach(2);
 		
